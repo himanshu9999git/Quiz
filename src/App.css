@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+
+.box{
+  width: 500px;
+  height: 400px;
+  color: white;
+  background-color: blue;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: auto;
+  margin: auto;
+  border-radius: 4%;
+}
+
+.btn{
+  background-color: aqua;
+  border-radius: 8%;
+  padding: 2%;
+  box-shadow: none;
+  padding-left: 6%;
+  padding-right: 6%;
+}
