@@ -1,4 +1,6 @@
-export default EndScreen = () =>
+const EndScreen = () =>
 {
     
 }
+
+export default EndScreen;
