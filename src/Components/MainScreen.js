@@ -6,7 +6,7 @@ const MainScreen = () =>
     
     const {gameState, setGameState} = useContext(QuizContext);
     return<>
-        <button onClick={changeState}>Main Screen</button>
+        Main Screen
     </>
 }
 
