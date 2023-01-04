@@ -9,7 +9,7 @@ function App() {
   const [gameState, setGameState] = useState("Start");
   return (
     <>
-      <div>
+      <div className="App">
         <h1>Quiz App</h1>
         <QuizContext.Provider value={{ gameState, setGameState }}>
           {gameState === "Start" && <StartScreen />}

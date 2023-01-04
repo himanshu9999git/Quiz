@@ -8,7 +8,7 @@ const StartScreen = () =>
     }
     const {gameState, setGameState} = useContext(QuizContext);
     return<>
-        <div className="box">
+        <div className="str">
             <button className="btn" onClick={changeState}>
                 Start Quiz
             </button>
