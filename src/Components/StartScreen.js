@@ -1,11 +1,15 @@
+import React, { useContext } from 'react'  
+import { QuizContext } from '../Helpers/Contexts'  
+
 const StartScreen = () =>
 {
-    const start = () =>{
-        console.log("Start fn called")
+    const changeState = () =>{
+        setGameState("Main");
     }
+    const {gameState, setGameState} = useContext(QuizContext);
     return<>
         <div className="box">
-            <button className="btn" onClick={start}>
+            <button className="btn" onClick={changeState}>
                 Start Quiz
             </button>
         </div>
