@@ -5,7 +5,7 @@ export const Ques = [
         optionB : "Melbourne",
         optionC : "Canberra",
         optionD : "Perth",
-        answer : "optionD",
+        answer : "D",
     },
     {
         prompt : "What is the Capital of USA",
@@ -13,7 +13,7 @@ export const Ques = [
         optionB : "Los Angeles",
         optionC : "Washington DC",
         optionD : "Miami",
-        answer : "optionC",
+        answer : "C",
     },
     {
         prompt : "What is the Capital of India",
@@ -21,6 +21,6 @@ export const Ques = [
         optionB : "Delhi",
         optionC : "Bangalore",
         optionD : "Hyderabad",
-        answer : "optionB",
+        answer : "B",
     },
 ]
