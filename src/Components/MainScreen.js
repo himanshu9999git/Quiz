@@ -7,10 +7,9 @@ const MainScreen = () => {
   const { score, setScore } = useContext(QuizContext);
   const [optionChosen, setOptionChosen] = useState("");
   const [currQues, setCurrQues] = useState(0);
-  const [quesState, setQuesState] = useState("Next Question");
 
   const nextQuestion = () => {
-    if (optionChosen == Ques[currQues].answer) {
+    if (Ques[currQues].answer == optionChosen) {
       setScore(score + 1);
     }
 
@@ -18,7 +17,7 @@ const MainScreen = () => {
   };
 
   const finishQuiz = () => {
-    if (optionChosen == Ques[currQues].answer) {
+    if (Ques[currQues].answer == optionChosen) {
       setScore(score + 1);
     }
     setGameState("End");
@@ -58,17 +57,16 @@ const MainScreen = () => {
             {Ques[currQues].optionD}
           </button>
         </div>
-        <div className="nxtQues">
-          {currQues == Ques.length - 1 ? (
-            <button onClick={finishQuiz} id="nextQuestion">
-              Finish Quiz
-            </button>
-          ) : (
-            <button onClick={nextQuestion} id="nextQuestion">
-              Next Question
-            </button>
-          )}
-        </div>
+
+        {currQues == Ques.length - 1 ? (
+          <button onClick={finishQuiz} id="nextQuestion">
+            Finish Quiz
+          </button>
+        ) : (
+          <button onClick={nextQuestion} id="nextQuestion">
+            Next Question
+          </button>
+        )}
       </div>
     </>
   );
