@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { QuizContext } from "../Helpers/Contexts";
 import { Ques } from "../Helpers/QuestionBank";
+import "../App.css";
 
 const EndScreen = () => {
   const { score, setScore, setGameState } = useContext(QuizContext);
@@ -8,16 +9,18 @@ const EndScreen = () => {
   const restartQuiz = () => {
     setScore(0);
     setGameState("Start");
-  }
+  };
 
   return (
     <>
-      <div className="endscreen">
+      <div className="end">
         <h1>Quiz Finished</h1>
         <h1>
           {score} / {Ques.length}
         </h1>
-        <button onClick={restartQuiz}>Restart Quiz</button>
+        <button className="btn" onClick={restartQuiz}>
+          <h3>Restart Quiz</h3>
+        </button>
       </div>
     </>
   );

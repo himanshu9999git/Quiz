@@ -3,8 +3,8 @@ export const Ques = [
         prompt : "What is the Capital of Australia",
         optionA : "Sydney",
         optionB : "Melbourne",
-        optionC : "Canberra",
-        optionD : "Perth",
+        optionC : "Perth",
+        optionD : "Canberra",
         answer : "D",
     },
     {

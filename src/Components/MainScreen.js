@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import { QuizContext } from "../Helpers/Contexts";
 import { Ques } from "../Helpers/QuestionBank";
+import '../App.css'
 
 const MainScreen = () => {
   const { gameState, setGameState } = useContext(QuizContext);
